@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package pruebas_oracle;
 
-/**
- *
- * @author Rodrigo Perez
- */
+
+packagepruebas_oracle;
+
 //importconectandooracle.ConectandoOracle;
 importjava.sql.Connection;
 importjava.sql.DriverManager;
@@ -21,7 +14,7 @@ importjava.util.logging.Logger;
 importoracle.jdbc.driver.OracleDriver;
 importjava.sql.*;
 
-public class Prueba_conexion {
+publicclassPrueba_conexion {
 
     //Usuario de la BD
 private final String USUARIO = "usuario02";
@@ -64,17 +57,10 @@ connection.close();
         }
     }
 
-}
+
  
-
-
-
-    public static void main(String[] args) {
-        // TODO code application logic here
-    
-
   /* Método principal  Main   */
-
+publicstaticvoidmain(String args[]) {
 
 Prueba_conexionconexionOracle = new Prueba_conexion();
 try {
@@ -93,7 +79,7 @@ System.out.println(rs.getString(1)+" "+rs.getString(2));
             }
 
 
-}
-    }   
+
+
 
     
